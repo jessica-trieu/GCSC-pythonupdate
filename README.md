@@ -48,6 +48,7 @@ Now that the IP addresses that needed to be removed were removed, it is time to 
 I use the ``.join()`` method with ``ip_addresses`` as my argument. ``“\n“`` is before “.join” because I want to separate each element in the string on a new line. (Otherwise it will combine it all into one long string.) I reassign the output to the variable `ip_addresses`.
 
 Next I create a `with` statement. 
+
 ![image](https://github.com/user-attachments/assets/b14abbc2-7a99-4472-b223-8663b3232828)
 
 I used ``with open()``, using ``import_file`` (the file I want to open) as my first argument and ``“w”`` as my second argument to indicate that I would like to overwrite the file. For the body of my `with` statement, I append ``file`` with ``.write(ip_addresses)``. This will replace the original contents in ``“allow_list.txt”`` with the updated content.
